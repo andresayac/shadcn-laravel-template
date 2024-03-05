@@ -15,7 +15,7 @@ createInertiaApp({
     setup({ el, App, props }) {
         const root = createRoot(el);
 
-        root.render(<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme"><App {...props} /></ThemeProvider>);
+        root.render(<ThemeProvider storageKey="vite-ui-theme"><App {...props} /></ThemeProvider>);
     },
     progress: {
         color: '#4B5563',

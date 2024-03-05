@@ -103,6 +103,9 @@ export default function Register() {
                         </div>
                         <div className="mt-4">
                             <Link href={route('login')}> Already registered?  </Link>
+
+                        </div>
+                        <div className="mt-2 flex items-center justify-between">
                             <Button type="submit" disabled={processing}>
                                 Register
                             </Button>

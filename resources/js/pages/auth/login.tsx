@@ -88,7 +88,7 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                                         checked={data.remember}
                                         onChange={(e) => setData('remember', e.target.checked)}
                                     />
-                                    <label htmlFor="remember_me" className="ms-2 block text-sm text-gray-900">
+                                    <label htmlFor="remember_me" className="ms-2 block text-sm text-primary">
                                         Remember me
                                     </label>
                                 </div>

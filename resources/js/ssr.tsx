@@ -23,7 +23,7 @@ createServer((page) =>
                     location: new URL(page.props.ziggy.location),
                 });
 
-            return <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme"><App {...props} /></ThemeProvider>;
+            return <ThemeProvider storageKey="vite-ui-theme"><App {...props} /></ThemeProvider>;
         },
     })
 );
