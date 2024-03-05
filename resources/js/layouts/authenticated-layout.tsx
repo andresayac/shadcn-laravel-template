@@ -27,7 +27,7 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import { TbLogout, TbUserEdit, TbMenu2 } from "react-icons/tb";
 
 
-export default function Authenticated({ user,  children }: PropsWithChildren<{ user: User}>) {
+export default function Authenticated({ user, children }: PropsWithChildren<{ user: User }>) {
     const { isOpen, toggle } = useSidebar();
     const [status, setStatus] = useState(false);
 
@@ -62,7 +62,7 @@ export default function Authenticated({ user,  children }: PropsWithChildren<{ u
                         <Sheet open={open} onOpenChange={setOpen}>
                             <SheetTrigger asChild>
                                 <div className="flex items-center justify-center gap-2">
-                                    <TbMenu2  size={28}/>
+                                    <TbMenu2 size={28} />
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-primary" />
                                 </div>
                             </SheetTrigger>
@@ -152,7 +152,7 @@ export default function Authenticated({ user,  children }: PropsWithChildren<{ u
                     </div>
                 </nav>
                 <main className="flex-1 overflow-y-auto overflow-x-hidden bg-secondary/10 pb-1 pt-16">
-                    <div className='container-md w-auto px-8 py-4'>
+                    <div className='container-md w-auto px-3 py-4 sm:px-2 md:px-5 lg:px-8'>
                         {children}
                     </div>
                 </main>
